@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    min-height: 100%;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#expand-btn,
+#collapse-btn {
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+#collapse-btn {
+    display: none;
+}
+
+#todo {
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right .4s;
+}
+
+#todo h2 {
+    text-align: center;
+}
+
+#todo input {
+    font-size: 1.1rem;
+    width: 80%;
+    display: block;
+    padding: 5px;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+#todo input:focus {
+    outline: none;
+}
+
+#todo button {
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    padding: 10px 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#todo li {
+    margin: 30px 10px 0 0;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+header {
+    padding-top: 40px;
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#date, 
+#time {
+    text-align: left;
+}
+
+#brand {
+    width: 350px;
+}
+
+section {
+    margin: 50px auto;
+}
+
+i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    text-align: center;
+    width: 1.3rem;
+}
+
+#tools,
+#resources {
+    margin: 0 auto;
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#tools li,
+#resources li {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s;
+    cursor: pointer;
+}
+
+.icon {
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #todo {
+        width: 40%;
+    }
+
+    #tools,
+    #resources {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #todo {
+        width: 60%;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    #tools,
+    #resources {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #todo {
+        width: 80%;
+    }
+
+    #brand {
+        width: 90%;
+    }
+
+    #tools,
+    #resources {
+        grid-template-columns: 1fr;
+    }
+}

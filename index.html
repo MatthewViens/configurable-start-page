@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/fonts/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <aside id="todo">
+        <i class="fa-solid fa-chevron-right" id="collapse-btn"></i>
+        <h2>Quick To-Do</h2>
+        <form id="todo-form">
+            <input id="todo-input" type="text" placeholder="I need to...">
+            <button id="add-todo">Add To-Do</button>
+        <ul id="todo-list"></ul>
+    </aside>
+    <div id="container">
+        <i class="fa-solid fa-chevron-left" id="expand-btn"></i>
+        <header>
+            <img id="brand">
+            <div>
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Tools</h2>
+                <ul id="tools">
+                </ul>
+            </section>
+            <section>
+                <h2>Resources</h2>
+                <ul id="resources">
+                </ul>
+            </section>
+        </main>
+        <script src="config.js"></script>
+        <script src="./scripts/config.js"></script>
+        <script src="./scripts/datetime.js"></script>
+        <script src="./scripts/todo.js"></script>
+    </div>
+</body>
+</html>
