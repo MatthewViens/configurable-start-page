@@ -3,14 +3,14 @@ configuration = {
       "title": "Company Dashboard",
       "backgroundColor": "rgb(40, 42, 53)",
       "fontColor": "rgb(227, 227, 229)",
-      "headingColor": "rgb(59, 112, 179)",
+      "headingColor": "rgb(59 112, 179)",
       "linkHoverColor": "rgb(59, 112, 179)",
-      "brand": "./assets/icons/placeholder-logo.svg",
+      "brand": "",
       "todoBackgroundColor": "rgb(54, 57, 75)",
       "todoFontColor": "rgb(227, 227, 229)",
       "todoHeadingColor": "rgb(59, 112, 179)",
       "todoButtonFontColor": "rgb(227, 227, 229)",
-      "todoButtonBackgroundColor": "rgb(59, 112, 179)"
+      "todoButtonBackgroundColor": "rgb(59, 112, 179"
   },
   tools: [
     // Example

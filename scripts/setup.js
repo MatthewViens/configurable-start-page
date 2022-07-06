@@ -2,8 +2,6 @@
 *     Functions    *
 ********************/
 
-// This is a test
-
 // Render Entries For Tools and Resources
 const renderEntries = (targetEl, entries) => {
     for (const entry of entries) {
