@@ -8,6 +8,7 @@ const renderEntries = (targetEl, entries) => {
         let newEntry = document.createElement('li')
         let link = document.createElement('a')
         let linkText = document.createTextNode(entry.name)
+        link.href = entry.href
         link.appendChild(linkText)
         if (entry.icon) {
             let icon
